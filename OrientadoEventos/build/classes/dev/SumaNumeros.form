@@ -68,7 +68,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="button">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Sumar"/>
+        <Property name="text" type="java.lang.String" value="comprobar"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonActionPerformed"/>
@@ -88,7 +88,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="180" y="190" width="203" height="52"/>
+          <AbsoluteConstraints x="60" y="190" width="440" height="52"/>
         </Constraint>
       </Constraints>
     </Component>

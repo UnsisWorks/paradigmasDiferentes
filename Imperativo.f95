@@ -9,12 +9,19 @@ Program SumaNumeros
 
 implicit none
 
-integer num1, num2, suma
+integer num1, num2, num
 
 write(*,*) 'Ingrese el primer numero: '
 read(*,*)num1
 write(*,*) 'Ingrese el segundo numero: '
 read(*,*)num2
-suma = num1 + num2
-write(*,*) 'El resultado es:', suma
+num = mod(num1, num2)
+
+if (num == 0) then
+    write(*,*) 'Son divisibles'
+else
+
+    write(*,*) 'No son divisibles'
+end if
 End Program SumaNumeros
+

@@ -71,7 +71,7 @@ public class SumaNumeros extends javax.swing.JFrame {
         txtDos.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         getContentPane().add(txtDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 210, 25));
 
-        button.setText("Sumar");
+        button.setText("comprobar");
         button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonActionPerformed(evt);
@@ -81,7 +81,7 @@ public class SumaNumeros extends javax.swing.JFrame {
 
         result.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         result.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(result, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 203, 52));
+        getContentPane().add(result, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 440, 52));
 
         jLabel2.setText("Number");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
@@ -126,9 +126,13 @@ public class SumaNumeros extends javax.swing.JFrame {
                 numUno = Integer.parseInt(num1);
                 numDos = Integer.parseInt(num2);
                 
-                int suma = numUno + numDos;
+                if (numUno % numDos == 0) {
+                    result.setText("Los numeros son divisibles entre ellos");
+                } else {
+                    result.setText("Los numeros no son divisibles entre ellos");
+                    
+                }
                 
-                result.setText(String.valueOf(suma));
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Solo debe ingresar numeros");
                 
